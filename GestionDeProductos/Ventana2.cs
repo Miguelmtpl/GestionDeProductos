@@ -22,8 +22,8 @@ namespace GestionDeProductos
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Ventana3 ventana3 = new Ventana3();
-            ventana3.Show();
+            VentanaProducto ventanap = new VentanaProducto();
+            ventanap.Show();
 
         }
     }

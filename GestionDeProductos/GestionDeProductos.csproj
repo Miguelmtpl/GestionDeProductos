@@ -37,6 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,35 +54,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestionProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionProductos.Designer.cs">
+      <DependentUpon>GestionProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MochileroCerveza.cs" />
+    <Compile Include="MochileroRefrescos.cs" />
+    <Compile Include="Producto.cs" />
     <Compile Include="Ventana2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventana2.Designer.cs">
       <DependentUpon>Ventana2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventana3.cs">
+    <Compile Include="VentanaMochilero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventana3.Designer.cs">
-      <DependentUpon>Ventana3.cs</DependentUpon>
+    <Compile Include="VentanaMochilero.Designer.cs">
+      <DependentUpon>VentanaMochilero.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventana4.cs">
+    <Compile Include="VentanaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventana4.Designer.cs">
-      <DependentUpon>Ventana4.cs</DependentUpon>
+    <Compile Include="VentanaProducto.Designer.cs">
+      <DependentUpon>VentanaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventana5.cs">
+    <Compile Include="VentanaGestion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventana5.Designer.cs">
-      <DependentUpon>Ventana5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ventana6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventana6.Designer.cs">
-      <DependentUpon>Ventana6.cs</DependentUpon>
+    <Compile Include="VentanaGestion.Designer.cs">
+      <DependentUpon>VentanaGestion.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventana7.cs">
       <SubType>Form</SubType>
@@ -99,20 +107,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionProductos.resx">
+      <DependentUpon>GestionProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventana2.resx">
       <DependentUpon>Ventana2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventana3.resx">
-      <DependentUpon>Ventana3.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaMochilero.resx">
+      <DependentUpon>VentanaMochilero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventana4.resx">
-      <DependentUpon>Ventana4.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaProducto.resx">
+      <DependentUpon>VentanaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventana5.resx">
-      <DependentUpon>Ventana5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ventana6.resx">
-      <DependentUpon>Ventana6.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaGestion.resx">
+      <DependentUpon>VentanaGestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana8.resx">
       <DependentUpon>Ventana8.cs</DependentUpon>
@@ -129,6 +137,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
