@@ -36,6 +36,15 @@
     <StartupObject>GestionDeProductos.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.2\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
@@ -54,6 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cerveza.cs" />
+    <Compile Include="Evento.cs" />
     <Compile Include="GestionProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,11 +74,11 @@
     <Compile Include="MochileroCerveza.cs" />
     <Compile Include="MochileroRefrescos.cs" />
     <Compile Include="Producto.cs" />
-    <Compile Include="Ventana2.cs">
+    <Compile Include="VentanaEvento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventana2.Designer.cs">
-      <DependentUpon>Ventana2.cs</DependentUpon>
+    <Compile Include="VentanaEvento.Designer.cs">
+      <DependentUpon>VentanaEvento.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaMochilero.cs">
       <SubType>Form</SubType>
@@ -87,17 +98,11 @@
     <Compile Include="VentanaGestion.Designer.cs">
       <DependentUpon>VentanaGestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventana7.cs">
+    <Compile Include="Liquidacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventana7.Designer.cs">
-      <DependentUpon>Ventana7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ventana8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventana8.Designer.cs">
-      <DependentUpon>Ventana8.cs</DependentUpon>
+    <Compile Include="Liquidacion.Designer.cs">
+      <DependentUpon>Liquidacion.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaInicio.cs">
       <SubType>Form</SubType>
@@ -110,8 +115,8 @@
     <EmbeddedResource Include="GestionProductos.resx">
       <DependentUpon>GestionProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventana2.resx">
-      <DependentUpon>Ventana2.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaEvento.resx">
+      <DependentUpon>VentanaEvento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaMochilero.resx">
       <DependentUpon>VentanaMochilero.cs</DependentUpon>
@@ -122,8 +127,8 @@
     <EmbeddedResource Include="VentanaGestion.resx">
       <DependentUpon>VentanaGestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventana8.resx">
-      <DependentUpon>Ventana8.cs</DependentUpon>
+    <EmbeddedResource Include="Liquidacion.resx">
+      <DependentUpon>Liquidacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaInicio.resx">
       <DependentUpon>VentanaInicio.cs</DependentUpon>
@@ -136,6 +141,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -150,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plantilla.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

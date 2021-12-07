@@ -2,7 +2,7 @@
 
 namespace GestionDeProductos
 {
-    partial class Ventana2
+    partial class VentanaEvento
     {
         /// <summary>
         /// Required designer variable.
@@ -74,10 +74,11 @@ namespace GestionDeProductos
             // nombreEnc
             // 
             this.nombreEnc.AutoSize = true;
+            this.nombreEnc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreEnc.ForeColor = System.Drawing.Color.Yellow;
-            this.nombreEnc.Location = new System.Drawing.Point(270, 126);
+            this.nombreEnc.Location = new System.Drawing.Point(218, 121);
             this.nombreEnc.Name = "nombreEnc";
-            this.nombreEnc.Size = new System.Drawing.Size(115, 13);
+            this.nombreEnc.Size = new System.Drawing.Size(170, 20);
             this.nombreEnc.TabIndex = 4;
             this.nombreEnc.Text = "Nombre del encargado";
             this.nombreEnc.Click += new System.EventHandler(this.nombreEnc_Click);
@@ -85,25 +86,27 @@ namespace GestionDeProductos
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(273, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Evento";
             // 
             // fechala
             // 
             this.fechala.AutoSize = true;
+            this.fechala.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechala.ForeColor = System.Drawing.Color.Yellow;
             this.fechala.Location = new System.Drawing.Point(270, 240);
             this.fechala.Name = "fechala";
-            this.fechala.Size = new System.Drawing.Size(37, 13);
+            this.fechala.Size = new System.Drawing.Size(64, 24);
             this.fechala.TabIndex = 6;
             this.fechala.Text = "Fecha";
             this.fechala.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Ventana2
+            // VentanaEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,7 +119,7 @@ namespace GestionDeProductos
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnEnc);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Ventana2";
+            this.Name = "VentanaEvento";
             this.Text = "Ventana2";
             this.ResumeLayout(false);
             this.PerformLayout();

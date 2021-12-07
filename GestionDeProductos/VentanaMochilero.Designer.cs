@@ -34,6 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboMo = new System.Windows.Forms.ComboBox();
             this.btnFinMoc = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAgrMoc
@@ -82,7 +85,6 @@
             this.comboMo.Name = "comboMo";
             this.comboMo.Size = new System.Drawing.Size(167, 21);
             this.comboMo.TabIndex = 4;
-            
             // 
             // btnFinMoc
             // 
@@ -94,11 +96,41 @@
             this.btnFinMoc.UseVisualStyleBackColor = true;
             this.btnFinMoc.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(647, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Cristina Gutierrez Leopoldo";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(647, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Concierto Melendi";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(647, 70);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "10/03/2022";
+            // 
             // VentanaMochilero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnFinMoc);
             this.Controls.Add(this.comboMo);
             this.Controls.Add(this.label2);
@@ -120,5 +152,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboMo;
         private System.Windows.Forms.Button btnFinMoc;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

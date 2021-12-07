@@ -22,7 +22,7 @@ namespace GestionDeProductos
         private void btnInicio_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Ventana2 ventana2 = new Ventana2();
+            VentanaEvento ventana2 = new VentanaEvento();
             ventana2.Show();
 
         }

@@ -13,6 +13,7 @@ namespace GestionDeProductos
 {
     public partial class VentanaProducto : Form
     {
+        Cerveza c = new Cerveza();
          List<Producto> listaProductos = new List<Producto>();
         public VentanaProducto()
         {
@@ -27,8 +28,9 @@ namespace GestionDeProductos
 
         private void button2_Click(object sender, EventArgs e)
         {
+            rellenarCerveza();
             this.Hide();
-            VentanaMochilero ventm= new VentanaMochilero(listaProductos);
+            VentanaMochilero ventm= new VentanaMochilero(listaProductos,c);
             ventm.Show();
         }
 
@@ -42,6 +44,12 @@ namespace GestionDeProductos
             
             
            
+        }
+        private void rellenarCerveza()
+        {
+            c.Peso= Convert.ToDouble(txtPeso.Text);
+            c.CantidadVaso = Convert.ToDouble(txtVaso.Text);
+            c.PrecioVaso = Convert.ToDouble(txtPrecioV.Text);
         }
     }
 }

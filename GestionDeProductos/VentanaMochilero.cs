@@ -13,14 +13,16 @@ namespace GestionDeProductos
 {
     public partial class VentanaMochilero : Form
     {
+        Cerveza c;
         List<Producto> listaProductos = new List<Producto>();
-        public VentanaMochilero(List<Producto> listaProductos)
+        public VentanaMochilero(List<Producto> listaProductos, Cerveza c)
         {
 
             InitializeComponent();
             this.listaProductos = listaProductos;
+            this.c = c;
         }
-         List <MochileroRefrescos> listaMochilerosR = new List<MochileroRefrescos>();
+        List <MochileroRefrescos> listaMochilerosR = new List<MochileroRefrescos>();
         List<MochileroCerveza> listaMochilerosC = new List<MochileroCerveza>();
         private void label2_Click(object sender, EventArgs e)
         {
@@ -30,7 +32,7 @@ namespace GestionDeProductos
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            VentanaGestion vent6  = new VentanaGestion(listaMochilerosR,listaMochilerosC);
+            VentanaGestion vent6  = new VentanaGestion(listaMochilerosR,listaMochilerosC,c);
             vent6.Show();
         }
 
@@ -38,11 +40,11 @@ namespace GestionDeProductos
         {
             if (comboMo.Text.Equals("Refrescos"))
             {
-                listaMochilerosR.Add(new MochileroRefrescos(txtNombreM.Text, listaProductos, 0));
+                listaMochilerosR.Add(new MochileroRefrescos(txtNombreM.Text, listaProductos, 0,0));
             }
             if (comboMo.Text.Equals("Cerveza"))
             {
-                listaMochilerosC.Add(new MochileroCerveza(txtNombreM.Text, 1, 0));
+                listaMochilerosC.Add(new MochileroCerveza(txtNombreM.Text, 1, 0,0));
             }
 
         }

@@ -37,10 +37,12 @@ namespace GestionDeProductos
             // txtInicio
             // 
             this.txtInicio.AutoSize = true;
-            this.txtInicio.ForeColor = System.Drawing.Color.Yellow;
+            this.txtInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInicio.ForeColor = System.Drawing.Color.Black;
             this.txtInicio.Location = new System.Drawing.Point(482, 199);
             this.txtInicio.Name = "txtInicio";
-            this.txtInicio.Size = new System.Drawing.Size(183, 13);
+            this.txtInicio.Size = new System.Drawing.Size(369, 25);
             this.txtInicio.TabIndex = 0;
             this.txtInicio.Text = "Bienvenido a la aplicación de gestion";
             this.txtInicio.Click += new System.EventHandler(this.label1_Click);
@@ -59,8 +61,8 @@ namespace GestionDeProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1266, 635);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1207, 588);
             this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.txtInicio);
             this.Name = "VentanaInicio";

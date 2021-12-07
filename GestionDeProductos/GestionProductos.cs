@@ -15,19 +15,21 @@ namespace GestionDeProductos
         String nombre;
         private List<MochileroRefrescos> listaMochilerosR;
         private List<MochileroCerveza> listaMochilerosC;
-        public GestionProductos( String nombre,List<MochileroRefrescos> listaMochilerosR, List<MochileroCerveza> listaMochilerosC)
+        Cerveza c;
+        public GestionProductos(String nombre, List<MochileroRefrescos> listaMochilerosR, List<MochileroCerveza> listaMochilerosC, Cerveza c)
         {
             InitializeComponent();
             this.listaMochilerosR = listaMochilerosR;
             this.listaMochilerosC = listaMochilerosC;
             this.nombre = nombre;
             productosMochilero();
+            this.c = c;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            VentanaGestion vg=new VentanaGestion(listaMochilerosR,listaMochilerosC);
+            VentanaGestion vg=new VentanaGestion(listaMochilerosR,listaMochilerosC,c);
             vg.Show();
         }
         private void productosMochilero()
@@ -67,6 +69,14 @@ namespace GestionDeProductos
                 }
 
             }
+            foreach (var v in listaMochilerosC)
+            {
+                if (v.Nombre.Equals(nombre))
+                {
+                    v.Tanquetas = v.Tanquetas + 1;
+                }
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -85,8 +95,17 @@ namespace GestionDeProductos
                 }
 
             }
+            foreach (var v in listaMochilerosC)
+            {
+                if (v.Nombre.Equals(nombre))
+                {
+                    v.Tanquetas = v.Tanquetas - 1;
+                }
+
+            }
 
         }
+        
 
        
     }

@@ -34,9 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
+            this.txtVaso = new System.Windows.Forms.TextBox();
+            this.txtPrecioV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -97,26 +97,26 @@
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 5;
             // 
-            // textBox3
+            // txtPeso
             // 
-            this.textBox3.Location = new System.Drawing.Point(581, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtPeso.Location = new System.Drawing.Point(581, 74);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(100, 20);
+            this.txtPeso.TabIndex = 6;
             // 
-            // textBox4
+            // txtVaso
             // 
-            this.textBox4.Location = new System.Drawing.Point(581, 133);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.txtVaso.Location = new System.Drawing.Point(581, 133);
+            this.txtVaso.Name = "txtVaso";
+            this.txtVaso.Size = new System.Drawing.Size(100, 20);
+            this.txtVaso.TabIndex = 7;
             // 
-            // textBox5
+            // txtPrecioV
             // 
-            this.textBox5.Location = new System.Drawing.Point(581, 195);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 8;
+            this.txtPrecioV.Location = new System.Drawing.Point(581, 195);
+            this.txtPrecioV.Name = "txtPrecioV";
+            this.txtPrecioV.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioV.TabIndex = 8;
             // 
             // label3
             // 
@@ -171,9 +171,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPrecioV);
+            this.Controls.Add(this.txtVaso);
+            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label2);
@@ -195,9 +195,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPeso;
+        private System.Windows.Forms.TextBox txtVaso;
+        private System.Windows.Forms.TextBox txtPrecioV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

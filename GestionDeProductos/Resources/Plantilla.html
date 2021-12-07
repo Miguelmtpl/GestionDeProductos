@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title of the document</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+         <tr>
+            <td style="width:20%"></td>
+            <td style="width:60%" align="center" valign="top">
+                <table>
+                    <tr><td align="center"><h4 style="margin:0px">BEBERAPID</h4></td></tr>
+                    <tr><td align="center">Direccion: Calle Viena, 7,45830 Miguel Esteban, Toledo </td></tr>
+                    <tr><td align="center">Telefono: 34 925 053 899</td></tr>
+                </table>
+            </td>
+            
+        </tr>
+
+        <tr><td colspan="3" height="20"></td></tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">Reponsable:</td>
+                        <td colspan="3" style="width:80%;border-bottom:1px solid black">@RESPONSABLE</td>
+                    </tr>
+                </table>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:20%">Evento:</td>
+                        <td style="width:30%;border-bottom:1px solid black">@EVENTO</td>
+                        <td style="width:10%">Fecha:</td>
+                        <td style="width:40%;border-bottom:1px solid black">@FECHA</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr><td colspan="3" height="30"></td></tr>
+
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%;">
+                    <thead>
+                        <tr style="background-color:#D8D8D8">
+                            <th>Nombre y ApellidosS</th>
+                            <th>Productos</th>
+                            <th>Dinero Esperado</th>
+                            <th>Dinero Entregado</th>
+                            <th>Diferencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        @FILAS
+                        <tr>
+                            <td align="Right">Total:</td>
+                            <td>@TOTALPRODUCTOS</td>
+                            <td>@TOTALDINEROES</td>
+                            <td>@TOTALDINEROEN</td>
+                            <td>@DIFERENCIA</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace GestionDeProductos
 {
-    public partial class Ventana7 : Form
+    public partial class VentanaEvento : Form
     {
-        public Ventana7()
+        public VentanaEvento()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            VentanaProducto ventanap = new VentanaProducto();
+            ventanap.Show();
+
         }
     }
 }
