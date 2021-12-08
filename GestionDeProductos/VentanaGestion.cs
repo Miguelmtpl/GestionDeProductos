@@ -44,6 +44,7 @@ namespace GestionDeProductos
                 comboNombres.Items.Add(w.Nombre);
 
             }
+            
 
 
         }

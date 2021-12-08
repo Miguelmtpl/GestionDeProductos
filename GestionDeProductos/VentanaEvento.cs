@@ -55,7 +55,8 @@ namespace GestionDeProductos
         
         int validaciones()
         {
-            if (!(txtNombre.Text.All(Char.IsLetter))|| txtNombre.Text=="")
+            
+            if (!(txtNombre.Text.Replace(" ", String.Empty).All(Char.IsLetter)) || txtNombre.Text=="")
             {
                 
                 return 1;

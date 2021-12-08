@@ -18,9 +18,10 @@ namespace GestionDeProductos
             this.precio = precio;
             this.cantidad = cantidad;
         }
-
-        public int Cantidad { get => cantidad; set => cantidad = value; }
-        public double Precio { get => precio; set => precio = value; }
         public string Nombre { get => nombre; set => nombre = value; }
+        public double Precio { get => precio; set => precio = value; }
+        public int Cantidad { get => cantidad; set => cantidad = value; }
+       
+        
     }
 }

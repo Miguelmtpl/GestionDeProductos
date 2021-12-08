@@ -109,7 +109,7 @@ namespace GestionDeProductos
         }
         int validaciones()
         {
-            if (!(txtproducto.Text.All(Char.IsLetter) || txtproducto.Text == ""))
+            if (!(txtproducto.Text.Replace(" ", String.Empty).All(Char.IsLetter) || txtproducto.Text == ""))
                 return 1;
             else
             {
@@ -196,5 +196,13 @@ namespace GestionDeProductos
             txtPrecio.Text = "";
             txtcantidad.Text = "";
         }
+
+        private void boton1_Click_1(object sender, EventArgs e)
+        {
+            ConsultarProducto cs = new ConsultarProducto(listaProductos);
+            cs.Show();
+        }
+
+        
     }
 }

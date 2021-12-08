@@ -29,52 +29,53 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.producto = new System.Windows.Forms.Label();
+            this.precio = new System.Windows.Forms.Label();
             this.txtproducto = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtVaso = new System.Windows.Forms.TextBox();
             this.txtPrecioV = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.cantidadT = new System.Windows.Forms.Label();
+            this.cantidadV = new System.Windows.Forms.Label();
+            this.precioV = new System.Windows.Forms.Label();
+            this.cantidadP = new System.Windows.Forms.Label();
             this.txtcantidad = new System.Windows.Forms.TextBox();
-            this.boton2 = new GestionDeProductos.Diseño.Boton();
-            this.boton1 = new GestionDeProductos.Diseño.Boton();
             this.responsable = new System.Windows.Forms.Label();
             this.evento = new System.Windows.Forms.Label();
             this.Fecha = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.tiref = new System.Windows.Forms.Label();
+            this.ticer = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.boton1 = new GestionDeProductos.Diseño.Boton();
+            this.btnSiguiente = new GestionDeProductos.Diseño.Boton();
+            this.btnAgregar = new GestionDeProductos.Diseño.Boton();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // producto
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label1.Location = new System.Drawing.Point(103, 262);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 36);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Producto";
+            this.producto.AutoSize = true;
+            this.producto.BackColor = System.Drawing.Color.Transparent;
+            this.producto.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.producto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.producto.Location = new System.Drawing.Point(103, 262);
+            this.producto.Name = "producto";
+            this.producto.Size = new System.Drawing.Size(126, 36);
+            this.producto.TabIndex = 2;
+            this.producto.Text = "Producto";
             // 
-            // label2
+            // precio
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label2.Location = new System.Drawing.Point(94, 435);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 36);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Precio(€)";
+            this.precio.AutoSize = true;
+            this.precio.BackColor = System.Drawing.Color.Transparent;
+            this.precio.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.precio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.precio.Location = new System.Drawing.Point(94, 435);
+            this.precio.Name = "precio";
+            this.precio.Size = new System.Drawing.Size(135, 36);
+            this.precio.TabIndex = 3;
+            this.precio.Text = "Precio(€)";
             // 
             // txtproducto
             // 
@@ -120,53 +121,53 @@
             this.txtPrecioV.TabIndex = 8;
             this.txtPrecioV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioV_KeyPress);
             // 
-            // label3
+            // cantidadT
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label3.Location = new System.Drawing.Point(692, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(301, 36);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Cantidad tanqueta(kg)";
+            this.cantidadT.AutoSize = true;
+            this.cantidadT.BackColor = System.Drawing.Color.Transparent;
+            this.cantidadT.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantidadT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.cantidadT.Location = new System.Drawing.Point(692, 267);
+            this.cantidadT.Name = "cantidadT";
+            this.cantidadT.Size = new System.Drawing.Size(301, 36);
+            this.cantidadT.TabIndex = 9;
+            this.cantidadT.Text = "Cantidad tanqueta(kg)";
             // 
-            // label4
+            // cantidadV
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label4.Location = new System.Drawing.Point(732, 435);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(252, 36);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Cantidad Vaso(kg)";
+            this.cantidadV.AutoSize = true;
+            this.cantidadV.BackColor = System.Drawing.Color.Transparent;
+            this.cantidadV.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic);
+            this.cantidadV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.cantidadV.Location = new System.Drawing.Point(732, 435);
+            this.cantidadV.Name = "cantidadV";
+            this.cantidadV.Size = new System.Drawing.Size(252, 36);
+            this.cantidadV.TabIndex = 10;
+            this.cantidadV.Text = "Cantidad Vaso(kg)";
             // 
-            // label5
+            // precioV
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label5.Location = new System.Drawing.Point(779, 621);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 36);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Precio Vaso(€)";
+            this.precioV.AutoSize = true;
+            this.precioV.BackColor = System.Drawing.Color.Transparent;
+            this.precioV.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.precioV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.precioV.Location = new System.Drawing.Point(779, 621);
+            this.precioV.Name = "precioV";
+            this.precioV.Size = new System.Drawing.Size(205, 36);
+            this.precioV.TabIndex = 11;
+            this.precioV.Text = "Precio Vaso(€)";
             // 
-            // label6
+            // cantidadP
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label6.Location = new System.Drawing.Point(43, 616);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 36);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Cantidad inicial ";
+            this.cantidadP.AutoSize = true;
+            this.cantidadP.BackColor = System.Drawing.Color.Transparent;
+            this.cantidadP.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantidadP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.cantidadP.Location = new System.Drawing.Point(43, 616);
+            this.cantidadP.Name = "cantidadP";
+            this.cantidadP.Size = new System.Drawing.Size(212, 36);
+            this.cantidadP.TabIndex = 12;
+            this.cantidadP.Text = "Cantidad inicial ";
             // 
             // txtcantidad
             // 
@@ -175,46 +176,6 @@
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(124, 40);
             this.txtcantidad.TabIndex = 13;
-            // 
-            // boton2
-            // 
-            this.boton2.BackColor = System.Drawing.Color.Transparent;
-            this.boton2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.boton2.BorderColor = System.Drawing.Color.LightBlue;
-            this.boton2.BorderRaius = 40;
-            this.boton2.BorderSize = 2;
-            this.boton2.FlatAppearance.BorderSize = 0;
-            this.boton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.boton2.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.boton2.Location = new System.Drawing.Point(861, 875);
-            this.boton2.Name = "boton2";
-            this.boton2.Size = new System.Drawing.Size(247, 98);
-            this.boton2.TabIndex = 15;
-            this.boton2.Text = "SIGUIENTE";
-            this.boton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.boton2.UseVisualStyleBackColor = false;
-            this.boton2.Click += new System.EventHandler(this.boton2_Click);
-            // 
-            // boton1
-            // 
-            this.boton1.BackColor = System.Drawing.Color.Transparent;
-            this.boton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.boton1.BorderColor = System.Drawing.Color.LightBlue;
-            this.boton1.BorderRaius = 40;
-            this.boton1.BorderSize = 0;
-            this.boton1.FlatAppearance.BorderSize = 0;
-            this.boton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.boton1.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.boton1.Location = new System.Drawing.Point(129, 750);
-            this.boton1.Name = "boton1";
-            this.boton1.Size = new System.Drawing.Size(249, 98);
-            this.boton1.TabIndex = 14;
-            this.boton1.Text = "AGREGAR PRODUCTO";
-            this.boton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.boton1.UseVisualStyleBackColor = false;
-            this.boton1.Click += new System.EventHandler(this.boton1_Click);
             // 
             // responsable
             // 
@@ -252,33 +213,93 @@
             this.Fecha.TabIndex = 18;
             this.Fecha.Text = "label9";
             // 
-            // label7
+            // tiref
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Paper Daisy DEMO", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label7.Location = new System.Drawing.Point(240, 104);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 36);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "REFRESCOS";
+            this.tiref.AutoSize = true;
+            this.tiref.BackColor = System.Drawing.Color.Transparent;
+            this.tiref.Font = new System.Drawing.Font("Paper Daisy DEMO", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiref.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.tiref.Location = new System.Drawing.Point(240, 104);
+            this.tiref.Name = "tiref";
+            this.tiref.Size = new System.Drawing.Size(111, 36);
+            this.tiref.TabIndex = 19;
+            this.tiref.Text = "REFRESCOS";
             // 
-            // label8
+            // ticer
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Paper Daisy DEMO", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label8.Location = new System.Drawing.Point(872, 104);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 36);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "CERVEZA";
+            this.ticer.AutoSize = true;
+            this.ticer.BackColor = System.Drawing.Color.Transparent;
+            this.ticer.Font = new System.Drawing.Font("Paper Daisy DEMO", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.ticer.Location = new System.Drawing.Point(872, 104);
+            this.ticer.Name = "ticer";
+            this.ticer.Size = new System.Drawing.Size(95, 36);
+            this.ticer.TabIndex = 20;
+            this.ticer.Text = "CERVEZA";
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // boton1
+            // 
+            this.boton1.BackColor = System.Drawing.Color.Transparent;
+            this.boton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.boton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.BorderRaius = 40;
+            this.boton1.BorderSize = 2;
+            this.boton1.FlatAppearance.BorderSize = 0;
+            this.boton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton1.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold);
+            this.boton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.Location = new System.Drawing.Point(85, 901);
+            this.boton1.Name = "boton1";
+            this.boton1.Size = new System.Drawing.Size(229, 72);
+            this.boton1.TabIndex = 21;
+            this.boton1.Text = "CONSULTAR REFRESCOS";
+            this.boton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.UseVisualStyleBackColor = false;
+            this.boton1.Click += new System.EventHandler(this.boton1_Click_1);
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.BackColor = System.Drawing.Color.Transparent;
+            this.btnSiguiente.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnSiguiente.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.btnSiguiente.BorderRaius = 40;
+            this.btnSiguiente.BorderSize = 2;
+            this.btnSiguiente.FlatAppearance.BorderSize = 0;
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.btnSiguiente.Location = new System.Drawing.Point(737, 875);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(247, 98);
+            this.btnSiguiente.TabIndex = 15;
+            this.btnSiguiente.Text = "SIGUIENTE";
+            this.btnSiguiente.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.boton2_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.btnAgregar.BorderRaius = 40;
+            this.btnAgregar.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.btnAgregar.Location = new System.Drawing.Point(85, 715);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(240, 82);
+            this.btnAgregar.TabIndex = 14;
+            this.btnAgregar.Text = "AGREGAR PRODUCTO";
+            this.btnAgregar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.boton1_Click);
             // 
             // VentanaProducto
             // 
@@ -286,27 +307,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionDeProductos.Properties.Resources.fondo2;
             this.ClientSize = new System.Drawing.Size(1884, 1041);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.boton1);
+            this.Controls.Add(this.ticer);
+            this.Controls.Add(this.tiref);
             this.Controls.Add(this.Fecha);
             this.Controls.Add(this.evento);
             this.Controls.Add(this.responsable);
-            this.Controls.Add(this.boton2);
-            this.Controls.Add(this.boton1);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtcantidad);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cantidadP);
+            this.Controls.Add(this.precioV);
+            this.Controls.Add(this.cantidadV);
+            this.Controls.Add(this.cantidadT);
             this.Controls.Add(this.txtPrecioV);
             this.Controls.Add(this.txtVaso);
             this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtproducto);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.precio);
+            this.Controls.Add(this.producto);
             this.Name = "VentanaProducto";
-            this.Text = "VentanaProducto";
+            this.Text = "Productos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.VentanaProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -316,25 +338,26 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label producto;
+        private System.Windows.Forms.Label precio;
         private System.Windows.Forms.TextBox txtproducto;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.TextBox txtVaso;
         private System.Windows.Forms.TextBox txtPrecioV;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label cantidadT;
+        private System.Windows.Forms.Label cantidadV;
+        private System.Windows.Forms.Label precioV;
+        private System.Windows.Forms.Label cantidadP;
         private System.Windows.Forms.TextBox txtcantidad;
-        private Diseño.Boton boton1;
-        private Diseño.Boton boton2;
+        private Diseño.Boton btnAgregar;
+        private Diseño.Boton btnSiguiente;
         private System.Windows.Forms.Label responsable;
         private System.Windows.Forms.Label evento;
         private System.Windows.Forms.Label Fecha;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label tiref;
+        private System.Windows.Forms.Label ticer;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Diseño.Boton boton1;
     }
 }

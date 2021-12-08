@@ -35,7 +35,7 @@ namespace GestionDeProductos
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEvento = new System.Windows.Forms.TextBox();
             this.nombreEnc = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.nombreEv = new System.Windows.Forms.Label();
             this.fechala = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.botonSiguiente = new GestionDeProductos.Diseño.Boton();
@@ -52,7 +52,7 @@ namespace GestionDeProductos
             // 
             // txtNombre
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic);
             this.txtNombre.Location = new System.Drawing.Point(602, 266);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(522, 43);
@@ -79,17 +79,17 @@ namespace GestionDeProductos
             this.nombreEnc.Text = "Nombre del encargad@";
             this.nombreEnc.Click += new System.EventHandler(this.nombreEnc_Click);
             // 
-            // label1
+            // nombreEv
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label1.Location = new System.Drawing.Point(471, 399);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Evento";
+            this.nombreEv.AutoSize = true;
+            this.nombreEv.BackColor = System.Drawing.Color.Transparent;
+            this.nombreEv.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.nombreEv.Location = new System.Drawing.Point(471, 399);
+            this.nombreEv.Name = "nombreEv";
+            this.nombreEv.Size = new System.Drawing.Size(101, 36);
+            this.nombreEv.TabIndex = 5;
+            this.nombreEv.Text = "Evento";
             // 
             // fechala
             // 
@@ -138,14 +138,14 @@ namespace GestionDeProductos
             this.ClientSize = new System.Drawing.Size(1884, 1041);
             this.Controls.Add(this.botonSiguiente);
             this.Controls.Add(this.fechala);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nombreEv);
             this.Controls.Add(this.nombreEnc);
             this.Controls.Add(this.txtEvento);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.date);
             this.MaximizeBox = false;
             this.Name = "VentanaEvento";
-            this.Text = "Ventana2";
+            this.Text = "Evento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -169,7 +169,7 @@ namespace GestionDeProductos
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtEvento;
         private System.Windows.Forms.Label nombreEnc;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nombreEv;
         private System.Windows.Forms.Label fechala;
         private Diseño.Boton botonSiguiente;
         private System.Windows.Forms.ErrorProvider errorProvider1;

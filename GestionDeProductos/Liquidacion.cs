@@ -84,6 +84,7 @@ namespace GestionDeProductos
 
         private void Liquidacion_Load(object sender, EventArgs e)
         {
+            nombreMochilero.Text= nombre;
             foreach (var v in listaMochilerosR)
             {
                 if (v.Nombre.Equals(nombre))
@@ -147,5 +148,7 @@ namespace GestionDeProductos
                 e.Handled = true;
             }
         }
+
+        
     }
 }

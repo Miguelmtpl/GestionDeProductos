@@ -51,8 +51,11 @@ namespace GestionDeProductos
                         {
                             listaMochilerosC.Add(new MochileroCerveza(txtNombreM.Text, 1, 0, 0));
                         }
+                        txtNombreM.Text = "";
+                        comboMo.Text = "";
+                        break;
                     }
-                    break;
+                    
                 case 1:
                     {
                         errorProvider1.SetError(txtNombreM, "Por favor rellene el campo nombre del mochilero solo con letras");
@@ -83,7 +86,7 @@ namespace GestionDeProductos
         }
         int validaciones()
         {
-            if (!(txtNombreM.Text.All(Char.IsLetter) || txtNombreM.Text == ""))
+            if (!(txtNombreM.Text.Replace(" ", String.Empty).All(Char.IsLetter) || txtNombreM.Text == ""))
                 return 1;
             else
             {
@@ -98,5 +101,19 @@ namespace GestionDeProductos
 
             }
         }
+
+        private void boton1_Click_1(object sender, EventArgs e)
+        {
+            Consultar_Mochilero cm = new Consultar_Mochilero(listaMochilerosC);
+            cm.Show();
+        }
+
+        private void btnMR_Click(object sender, EventArgs e)
+        {
+            ConsultarMochileroR cr = new ConsultarMochileroR(listaMochilerosR);
+            cr.Show();
+        }
+
+       
     }
 }

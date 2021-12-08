@@ -35,6 +35,9 @@
   <PropertyGroup>
     <StartupObject>GestionDeProductos.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconomae.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -64,6 +67,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cerveza.cs" />
+    <Compile Include="Consultar MochileroC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar MochileroC.Designer.cs">
+      <DependentUpon>Consultar MochileroC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarMochileroR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarMochileroR.Designer.cs">
+      <DependentUpon>ConsultarMochileroR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPro.Designer.cs">
+      <DependentUpon>ConsultarPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Diseño\Boton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -115,6 +136,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consultar MochileroC.resx">
+      <DependentUpon>Consultar MochileroC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarMochileroR.resx">
+      <DependentUpon>ConsultarMochileroR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPro.resx">
+      <DependentUpon>ConsultarPro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionProductos.resx">
       <DependentUpon>GestionProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +202,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconomae.ico" />
+    <None Include="Resources\icono.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
