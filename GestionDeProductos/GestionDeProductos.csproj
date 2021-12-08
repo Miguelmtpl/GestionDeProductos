@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cerveza.cs" />
+    <Compile Include="Resources\Diseño\Boton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Evento.cs" />
     <Compile Include="GestionProductos.cs">
       <SubType>Form</SubType>
@@ -143,6 +146,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Resources\Fonts\paperdaisy-demo.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +163,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Plantilla.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

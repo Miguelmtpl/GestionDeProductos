@@ -30,97 +30,116 @@ namespace GestionDeProductos
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnEnc = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtEvento = new System.Windows.Forms.TextBox();
             this.nombreEnc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fechala = new System.Windows.Forms.Label();
+            this.botonSiguiente = new GestionDeProductos.Diseño.Boton();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // date
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(411, 240);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(375, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.date.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Location = new System.Drawing.Point(749, 547);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(375, 29);
+            this.date.TabIndex = 0;
             // 
-            // btnEnc
+            // txtNombre
             // 
-            this.btnEnc.ForeColor = System.Drawing.Color.Black;
-            this.btnEnc.Location = new System.Drawing.Point(507, 505);
-            this.btnEnc.Name = "btnEnc";
-            this.btnEnc.Size = new System.Drawing.Size(198, 44);
-            this.btnEnc.TabIndex = 1;
-            this.btnEnc.Text = "Aceptar";
-            this.btnEnc.UseVisualStyleBackColor = true;
-            this.btnEnc.Click += new System.EventHandler(this.button1_Click);
+            this.txtNombre.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(749, 266);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(375, 29);
+            this.txtNombre.TabIndex = 2;
             // 
-            // textBox1
+            // txtEvento
             // 
-            this.textBox1.Location = new System.Drawing.Point(411, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(375, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(411, 181);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(375, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtEvento.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEvento.Location = new System.Drawing.Point(749, 396);
+            this.txtEvento.Name = "txtEvento";
+            this.txtEvento.Size = new System.Drawing.Size(375, 29);
+            this.txtEvento.TabIndex = 3;
             // 
             // nombreEnc
             // 
             this.nombreEnc.AutoSize = true;
-            this.nombreEnc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreEnc.ForeColor = System.Drawing.Color.Yellow;
-            this.nombreEnc.Location = new System.Drawing.Point(218, 121);
+            this.nombreEnc.BackColor = System.Drawing.Color.Transparent;
+            this.nombreEnc.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEnc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.nombreEnc.Location = new System.Drawing.Point(453, 264);
             this.nombreEnc.Name = "nombreEnc";
-            this.nombreEnc.Size = new System.Drawing.Size(170, 20);
+            this.nombreEnc.Size = new System.Drawing.Size(234, 27);
             this.nombreEnc.TabIndex = 4;
-            this.nombreEnc.Text = "Nombre del encargado";
+            this.nombreEnc.Text = "Nombre del encargad@";
             this.nombreEnc.Click += new System.EventHandler(this.nombreEnc_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(273, 181);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.label1.Location = new System.Drawing.Point(610, 398);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 25);
+            this.label1.Size = new System.Drawing.Size(77, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "Evento";
             // 
             // fechala
             // 
             this.fechala.AutoSize = true;
-            this.fechala.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fechala.ForeColor = System.Drawing.Color.Yellow;
-            this.fechala.Location = new System.Drawing.Point(270, 240);
+            this.fechala.BackColor = System.Drawing.Color.Transparent;
+            this.fechala.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.fechala.Location = new System.Drawing.Point(618, 549);
             this.fechala.Name = "fechala";
-            this.fechala.Size = new System.Drawing.Size(64, 24);
+            this.fechala.Size = new System.Drawing.Size(69, 27);
             this.fechala.TabIndex = 6;
             this.fechala.Text = "Fecha";
             this.fechala.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // botonSiguiente
+            // 
+            this.botonSiguiente.BackColor = System.Drawing.Color.Transparent;
+            this.botonSiguiente.BackgroundColor = System.Drawing.Color.Transparent;
+            this.botonSiguiente.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.botonSiguiente.BorderRaius = 40;
+            this.botonSiguiente.BorderSize = 2;
+            this.botonSiguiente.FlatAppearance.BorderSize = 0;
+            this.botonSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonSiguiente.Font = new System.Drawing.Font("Paper Daisy DEMO", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.botonSiguiente.Location = new System.Drawing.Point(816, 675);
+            this.botonSiguiente.Name = "botonSiguiente";
+            this.botonSiguiente.Size = new System.Drawing.Size(308, 79);
+            this.botonSiguiente.TabIndex = 7;
+            this.botonSiguiente.Text = "SIGUIENTE";
+            this.botonSiguiente.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.botonSiguiente.UseVisualStyleBackColor = false;
+            this.botonSiguiente.Click += new System.EventHandler(this.boton1_Click);
             // 
             // VentanaEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1375, 645);
+            this.BackgroundImage = global::GestionDeProductos.Properties.Resources.fondo2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1884, 1041);
+            this.Controls.Add(this.botonSiguiente);
             this.Controls.Add(this.fechala);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nombreEnc);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnEnc);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtEvento);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.date);
+            this.MaximizeBox = false;
             this.Name = "VentanaEvento";
             this.Text = "Ventana2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,12 +157,12 @@ namespace GestionDeProductos
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnEnc;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtEvento;
         private System.Windows.Forms.Label nombreEnc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label fechala;
+        private Diseño.Boton botonSiguiente;
     }
 }

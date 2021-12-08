@@ -36,19 +36,25 @@ namespace GestionDeProductos
             vent6.Show();
         }
 
-        private void btnAgrMoc_Click(object sender, EventArgs e)
+        
+
+        private void boton1_Click(object sender, EventArgs e)
         {
             if (comboMo.Text.Equals("Refrescos"))
             {
-                listaMochilerosR.Add(new MochileroRefrescos(txtNombreM.Text, listaProductos, 0,0));
+                listaMochilerosR.Add(new MochileroRefrescos(txtNombreM.Text, listaProductos, 0, 0));
             }
             if (comboMo.Text.Equals("Cerveza"))
             {
-                listaMochilerosC.Add(new MochileroCerveza(txtNombreM.Text, 1, 0,0));
+                listaMochilerosC.Add(new MochileroCerveza(txtNombreM.Text, 1, 0, 0));
             }
-
         }
 
-        
+        private void boton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            VentanaGestion vent6 = new VentanaGestion(listaMochilerosR, listaMochilerosC, c);
+            vent6.Show();
+        }
     }
 }

@@ -29,10 +29,7 @@ namespace GestionDeProductos
         }
        
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
+        
         private void calcularDineroAEntregar()
         {
             foreach (var v in listaMochilerosR)
@@ -109,11 +106,16 @@ namespace GestionDeProductos
 
         }
 
-        private void calcular_Click(object sender, EventArgs e)
+        private void boton1_Click(object sender, EventArgs e)
         {
             double a = Convert.ToDouble(txtDineroEnt.Text);
             double b = Convert.ToDouble(dineroE.Text);
-            diferencia.Text = (a-b).ToString();
+            diferencia.Text = (a - b).ToString();
+        }
+
+        private void boton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

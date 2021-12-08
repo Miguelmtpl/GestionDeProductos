@@ -26,12 +26,7 @@ namespace GestionDeProductos
             this.c = c;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            VentanaGestion vg=new VentanaGestion(listaMochilerosR,listaMochilerosC,c);
-            vg.Show();
-        }
+        
         private void productosMochilero()
         {
             foreach (var v in listaMochilerosR)
@@ -79,7 +74,8 @@ namespace GestionDeProductos
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void boton1_Click(object sender, EventArgs e)
         {
             foreach (var v in listaMochilerosR)
             {
@@ -103,10 +99,39 @@ namespace GestionDeProductos
                 }
 
             }
-
         }
-        
 
-       
+        private void boton2_Click(object sender, EventArgs e)
+        {
+            foreach (var v in listaMochilerosR)
+            {
+                if (v.Nombre.Equals(nombre))
+                {
+                    foreach (var x in v.ListaProductos)
+                    {
+                        if (x.Nombre.Equals(comboProductos.Text))
+                        {
+                            x.Cantidad = x.Cantidad + 1;
+                        }
+                    }
+                }
+
+            }
+            foreach (var v in listaMochilerosC)
+            {
+                if (v.Nombre.Equals(nombre))
+                {
+                    v.Tanquetas = v.Tanquetas + 1;
+                }
+
+            }
+        }
+
+        private void boton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            VentanaGestion vg = new VentanaGestion(listaMochilerosR, listaMochilerosC, c);
+            vg.Show();
+        }
     }
 }

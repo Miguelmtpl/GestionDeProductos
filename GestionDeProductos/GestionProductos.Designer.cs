@@ -28,69 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.comboProductos = new System.Windows.Forms.ComboBox();
+            this.boton1 = new GestionDeProductos.Diseño.Boton();
+            this.boton2 = new GestionDeProductos.Diseño.Boton();
+            this.boton3 = new GestionDeProductos.Diseño.Boton();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(501, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(129, 167);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(315, 268);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Finalizar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboProductos
             // 
+            this.comboProductos.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboProductos.FormattingEnabled = true;
-            this.comboProductos.Location = new System.Drawing.Point(288, 169);
+            this.comboProductos.Location = new System.Drawing.Point(415, 426);
             this.comboProductos.Name = "comboProductos";
-            this.comboProductos.Size = new System.Drawing.Size(121, 21);
+            this.comboProductos.Size = new System.Drawing.Size(396, 44);
             this.comboProductos.TabIndex = 4;
+            // 
+            // boton1
+            // 
+            this.boton1.BackColor = System.Drawing.Color.Transparent;
+            this.boton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.boton1.BorderColor = System.Drawing.Color.LightBlue;
+            this.boton1.BorderRaius = 40;
+            this.boton1.BorderSize = 2;
+            this.boton1.FlatAppearance.BorderSize = 0;
+            this.boton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.Location = new System.Drawing.Point(236, 418);
+            this.boton1.Name = "boton1";
+            this.boton1.Size = new System.Drawing.Size(66, 56);
+            this.boton1.TabIndex = 5;
+            this.boton1.Text = "-";
+            this.boton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.UseVisualStyleBackColor = false;
+            this.boton1.Click += new System.EventHandler(this.boton1_Click);
+            // 
+            // boton2
+            // 
+            this.boton2.BackColor = System.Drawing.Color.Transparent;
+            this.boton2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.boton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton2.BorderRaius = 40;
+            this.boton2.BorderSize = 2;
+            this.boton2.FlatAppearance.BorderSize = 0;
+            this.boton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton2.Location = new System.Drawing.Point(897, 418);
+            this.boton2.Name = "boton2";
+            this.boton2.Size = new System.Drawing.Size(66, 56);
+            this.boton2.TabIndex = 6;
+            this.boton2.Text = "+";
+            this.boton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton2.UseVisualStyleBackColor = false;
+            this.boton2.Click += new System.EventHandler(this.boton2_Click);
+            // 
+            // boton3
+            // 
+            this.boton3.BackColor = System.Drawing.Color.Transparent;
+            this.boton3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.boton3.BorderColor = System.Drawing.Color.LightBlue;
+            this.boton3.BorderRaius = 40;
+            this.boton3.BorderSize = 2;
+            this.boton3.FlatAppearance.BorderSize = 0;
+            this.boton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton3.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton3.ForeColor = System.Drawing.Color.White;
+            this.boton3.Location = new System.Drawing.Point(461, 681);
+            this.boton3.Name = "boton3";
+            this.boton3.Size = new System.Drawing.Size(291, 110);
+            this.boton3.TabIndex = 7;
+            this.boton3.Text = "FINALIZAR";
+            this.boton3.TextColor = System.Drawing.Color.White;
+            this.boton3.UseVisualStyleBackColor = false;
+            this.boton3.Click += new System.EventHandler(this.boton3_Click);
             // 
             // GestionProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::GestionDeProductos.Properties.Resources.fondo2;
+            this.ClientSize = new System.Drawing.Size(1884, 1041);
+            this.Controls.Add(this.boton3);
+            this.Controls.Add(this.boton2);
+            this.Controls.Add(this.boton1);
             this.Controls.Add(this.comboProductos);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.Name = "GestionProductos";
             this.Text = "GestionProductos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboProductos;
+        private Diseño.Boton boton1;
+        private Diseño.Boton boton2;
+        private Diseño.Boton boton3;
     }
 }

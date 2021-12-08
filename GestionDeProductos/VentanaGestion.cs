@@ -30,22 +30,7 @@ namespace GestionDeProductos
             this.c = c;
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Liquidacion vent8=new Liquidacion(comboNombres.Text, listaMochilerosR, listaMochilerosC,c);
-            vent8.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GestionProductos gestionDeProductos=new GestionProductos(comboNombres.Text,listaMochilerosR,listaMochilerosC,c);
-            gestionDeProductos.Show();
-
-            
-
-        }
+        
         private void rellenarCombo()
         {
             foreach(var v in listaMochilerosR){
@@ -60,19 +45,13 @@ namespace GestionDeProductos
 
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            generarReporte();
-
-        }
         private void generarReporte()
         {
             SaveFileDialog guardar=new SaveFileDialog();
             guardar.FileName =  "_evento.pdf"+".pdf";
            
             String html=Properties.Resources.Plantilla.ToString();
-            html=html.Replace(@)
+            //html=html.Replace(@)
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -92,6 +71,24 @@ namespace GestionDeProductos
                     stream.Close();
             }
             }
+        }
+
+        private void boton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GestionProductos gestionDeProductos = new GestionProductos(comboNombres.Text, listaMochilerosR, listaMochilerosC, c);
+            gestionDeProductos.Show();
+        }
+
+        private void boton2_Click(object sender, EventArgs e)
+        {
+            Liquidacion vent8 = new Liquidacion(comboNombres.Text, listaMochilerosR, listaMochilerosC, c);
+            vent8.Show();
+        }
+
+        private void boton3_Click(object sender, EventArgs e)
+        {
+            generarReporte();
         }
     }
 }

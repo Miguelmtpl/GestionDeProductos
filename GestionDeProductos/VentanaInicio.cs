@@ -15,15 +15,21 @@ namespace GestionDeProductos
         public VentanaInicio()
         {
             InitializeComponent();
+            
+            
         }
 
-        
+       
 
-        private void btnInicio_Click(object sender, EventArgs e)
+        private void boton1_Click(object sender, EventArgs e)
         {
             this.Hide();
             VentanaEvento ventana2 = new VentanaEvento();
             ventana2.Show();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

@@ -13,43 +13,44 @@ namespace GestionDeProductos
 {
     public partial class VentanaProducto : Form
     {
+        Evento ev;
         Cerveza c = new Cerveza();
          List<Producto> listaProductos = new List<Producto>();
-        public VentanaProducto()
+        public VentanaProducto(Evento ev)
         {
+            this.ev = ev;
             InitializeComponent();
         }
 
-       
-        private void label1_Click(object sender, EventArgs e)
+       private void rellenarCerveza()
         {
-
+            c.Peso= Convert.ToDouble(txtPeso.Text);
+            c.CantidadVaso = Convert.ToDouble(txtVaso.Text);
+            c.PrecioVaso = Convert.ToDouble(txtPrecioV.Text);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            rellenarCerveza();
-            this.Hide();
-            VentanaMochilero ventm= new VentanaMochilero(listaProductos,c);
-            ventm.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void boton1_Click(object sender, EventArgs e)
         {
             String nombre = txtnombre.Text;
             double precio = Convert.ToDouble(txtPrecio.Text);
             int cantidad = Convert.ToInt32(txtcantidad.Text);
             listaProductos.Add(new Producto(nombre, precio, cantidad));
-            
-            
-            
-           
+
         }
-        private void rellenarCerveza()
+
+        private void boton2_Click(object sender, EventArgs e)
         {
-            c.Peso= Convert.ToDouble(txtPeso.Text);
-            c.CantidadVaso = Convert.ToDouble(txtVaso.Text);
-            c.PrecioVaso = Convert.ToDouble(txtPrecioV.Text);
+            rellenarCerveza();
+            this.Hide();
+            VentanaMochilero ventm = new VentanaMochilero(listaProductos, c);
+            ventm.Show();
+        }
+
+        private void VentanaProducto_Load(object sender, EventArgs e)
+        {
+            responsable.Text = ev.Responsable;
+            evento.Text = ev.Nombre;
+            Fecha.Text = ev.Fecha.ToString();
         }
     }
 }

@@ -31,100 +31,139 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtDineroEnt = new System.Windows.Forms.TextBox();
             this.dineroE = new System.Windows.Forms.Label();
             this.diferencia = new System.Windows.Forms.Label();
-            this.calcular = new System.Windows.Forms.Button();
+            this.boton1 = new GestionDeProductos.Diseño.Boton();
+            this.boton2 = new GestionDeProductos.Diseño.Boton();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(127, 87);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.label1.Location = new System.Drawing.Point(223, 312);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.Size = new System.Drawing.Size(236, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dinero a entregar";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(127, 150);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.label3.Location = new System.Drawing.Point(226, 404);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.Size = new System.Drawing.Size(237, 36);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dinero Entregado";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(127, 208);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.label4.Location = new System.Drawing.Point(320, 503);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(139, 36);
             this.label4.TabIndex = 3;
             this.label4.Text = "Diferencia";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(139, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 30);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Finalizar Liquidación";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // txtDineroEnt
             // 
-            this.txtDineroEnt.Location = new System.Drawing.Point(253, 150);
+            this.txtDineroEnt.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDineroEnt.Location = new System.Drawing.Point(659, 393);
             this.txtDineroEnt.Name = "txtDineroEnt";
-            this.txtDineroEnt.Size = new System.Drawing.Size(100, 20);
+            this.txtDineroEnt.Size = new System.Drawing.Size(100, 43);
             this.txtDineroEnt.TabIndex = 5;
             // 
             // dineroE
             // 
             this.dineroE.AutoSize = true;
-            this.dineroE.Location = new System.Drawing.Point(278, 87);
+            this.dineroE.BackColor = System.Drawing.Color.Transparent;
+            this.dineroE.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dineroE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.dineroE.Location = new System.Drawing.Point(653, 312);
             this.dineroE.Name = "dineroE";
-            this.dineroE.Size = new System.Drawing.Size(43, 13);
+            this.dineroE.Size = new System.Drawing.Size(110, 36);
             this.dineroE.TabIndex = 8;
             this.dineroE.Text = "dineroE";
             // 
             // diferencia
             // 
             this.diferencia.AutoSize = true;
-            this.diferencia.Location = new System.Drawing.Point(269, 208);
+            this.diferencia.BackColor = System.Drawing.Color.Transparent;
+            this.diferencia.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.diferencia.Location = new System.Drawing.Point(653, 503);
             this.diferencia.Name = "diferencia";
-            this.diferencia.Size = new System.Drawing.Size(35, 13);
+            this.diferencia.Size = new System.Drawing.Size(173, 36);
             this.diferencia.TabIndex = 9;
-            this.diferencia.Text = "label2";
+            this.diferencia.Text = "DIFERENCIA";
             // 
-            // calcular
+            // boton1
             // 
-            this.calcular.Location = new System.Drawing.Point(355, 203);
-            this.calcular.Name = "calcular";
-            this.calcular.Size = new System.Drawing.Size(75, 23);
-            this.calcular.TabIndex = 10;
-            this.calcular.Text = "Calcular";
-            this.calcular.UseVisualStyleBackColor = true;
-            this.calcular.Click += new System.EventHandler(this.calcular_Click);
+            this.boton1.BackColor = System.Drawing.Color.Transparent;
+            this.boton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.boton1.BorderColor = System.Drawing.Color.LightBlue;
+            this.boton1.BorderRaius = 40;
+            this.boton1.BorderSize = 2;
+            this.boton1.FlatAppearance.BorderSize = 0;
+            this.boton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton1.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.Location = new System.Drawing.Point(448, 590);
+            this.boton1.Name = "boton1";
+            this.boton1.Size = new System.Drawing.Size(272, 38);
+            this.boton1.TabIndex = 11;
+            this.boton1.Text = "CALCULAR DIFERENCIA";
+            this.boton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton1.UseVisualStyleBackColor = false;
+            this.boton1.Click += new System.EventHandler(this.boton1_Click);
+            // 
+            // boton2
+            // 
+            this.boton2.BackColor = System.Drawing.Color.Transparent;
+            this.boton2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.boton2.BorderColor = System.Drawing.Color.LightBlue;
+            this.boton2.BorderRaius = 40;
+            this.boton2.BorderSize = 2;
+            this.boton2.FlatAppearance.BorderSize = 0;
+            this.boton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton2.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton2.Location = new System.Drawing.Point(420, 749);
+            this.boton2.Name = "boton2";
+            this.boton2.Size = new System.Drawing.Size(324, 68);
+            this.boton2.TabIndex = 12;
+            this.boton2.Text = "FINALIZAR LIQUIDACION";
+            this.boton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.boton2.UseVisualStyleBackColor = false;
+            this.boton2.Click += new System.EventHandler(this.boton2_Click);
             // 
             // Liquidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 321);
-            this.Controls.Add(this.calcular);
+            this.BackgroundImage = global::GestionDeProductos.Properties.Resources.fondo2;
+            this.ClientSize = new System.Drawing.Size(1884, 1041);
+            this.Controls.Add(this.boton2);
+            this.Controls.Add(this.boton1);
             this.Controls.Add(this.diferencia);
             this.Controls.Add(this.dineroE);
             this.Controls.Add(this.txtDineroEnt);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Liquidacion";
             this.Text = "Ventana8";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Liquidacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -136,10 +175,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtDineroEnt;
         private System.Windows.Forms.Label dineroE;
         private System.Windows.Forms.Label diferencia;
-        private System.Windows.Forms.Button calcular;
+        private Diseño.Boton boton1;
+        private Diseño.Boton boton2;
     }
 }

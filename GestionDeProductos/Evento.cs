@@ -19,6 +19,10 @@ namespace GestionDeProductos
             this.fecha = fecha;
         }
 
+        public Evento()
+        {
+        }
+
         public string Responsable { get => responsable; set => responsable = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public DateTime Fecha { get => fecha; set => fecha = value; }

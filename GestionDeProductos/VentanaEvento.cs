@@ -12,6 +12,7 @@ namespace GestionDeProductos
 {
     public partial class VentanaEvento : Form
     {
+        Evento Ev = new Evento();
         public VentanaEvento()
         {
             InitializeComponent();
@@ -19,12 +20,20 @@ namespace GestionDeProductos
 
         
 
-        private void button1_Click(object sender, EventArgs e)
+        private void boton1_Click(object sender, EventArgs e)
         {
+            rellenarEvento();
             this.Hide();
-            VentanaProducto ventanap = new VentanaProducto();
+            VentanaProducto ventanap = new VentanaProducto(Ev);
             ventanap.Show();
-
         }
+        private void rellenarEvento()
+        {
+            Ev.Responsable= txtNombre.Text;
+            Ev.Nombre= txtEvento.Text;
+            Ev.Fecha = date.Value;
+        }
+
+        
     }
 }
