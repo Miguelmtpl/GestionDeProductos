@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtproducto = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtVaso = new System.Windows.Forms.TextBox();
@@ -45,6 +46,10 @@
             this.responsable = new System.Windows.Forms.Label();
             this.evento = new System.Windows.Forms.Label();
             this.Fecha = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label1.Location = new System.Drawing.Point(93, 130);
+            this.label1.Location = new System.Drawing.Point(103, 262);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 36);
             this.label1.TabIndex = 2;
@@ -63,53 +68,57 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label2.Location = new System.Drawing.Point(96, 306);
+            this.label2.Location = new System.Drawing.Point(94, 435);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 32);
+            this.label2.Size = new System.Drawing.Size(135, 36);
             this.label2.TabIndex = 3;
             this.label2.Text = "Precio(€)";
             // 
-            // txtnombre
+            // txtproducto
             // 
-            this.txtnombre.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(294, 127);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(301, 43);
-            this.txtnombre.TabIndex = 4;
+            this.txtproducto.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproducto.Location = new System.Drawing.Point(304, 259);
+            this.txtproducto.Name = "txtproducto";
+            this.txtproducto.Size = new System.Drawing.Size(301, 43);
+            this.txtproducto.TabIndex = 4;
             // 
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(294, 300);
+            this.txtPrecio.Location = new System.Drawing.Point(304, 432);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(124, 43);
             this.txtPrecio.TabIndex = 5;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtPeso
             // 
             this.txtPeso.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPeso.Location = new System.Drawing.Point(1008, 132);
+            this.txtPeso.Location = new System.Drawing.Point(1018, 264);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(100, 43);
             this.txtPeso.TabIndex = 6;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
             // 
             // txtVaso
             // 
             this.txtVaso.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVaso.Location = new System.Drawing.Point(1008, 303);
+            this.txtVaso.Location = new System.Drawing.Point(1018, 435);
             this.txtVaso.Name = "txtVaso";
             this.txtVaso.Size = new System.Drawing.Size(100, 40);
             this.txtVaso.TabIndex = 7;
+            this.txtVaso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVaso_KeyPress);
             // 
             // txtPrecioV
             // 
             this.txtPrecioV.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioV.Location = new System.Drawing.Point(1008, 481);
+            this.txtPrecioV.Location = new System.Drawing.Point(1018, 613);
             this.txtPrecioV.Name = "txtPrecioV";
             this.txtPrecioV.Size = new System.Drawing.Size(100, 40);
             this.txtPrecioV.TabIndex = 8;
+            this.txtPrecioV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioV_KeyPress);
             // 
             // label3
             // 
@@ -117,7 +126,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label3.Location = new System.Drawing.Point(682, 135);
+            this.label3.Location = new System.Drawing.Point(692, 267);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(301, 36);
             this.label3.TabIndex = 9;
@@ -129,7 +138,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label4.Location = new System.Drawing.Point(722, 303);
+            this.label4.Location = new System.Drawing.Point(732, 435);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(252, 36);
             this.label4.TabIndex = 10;
@@ -141,7 +150,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label5.Location = new System.Drawing.Point(769, 489);
+            this.label5.Location = new System.Drawing.Point(779, 621);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(205, 36);
             this.label5.TabIndex = 11;
@@ -151,18 +160,18 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label6.Location = new System.Drawing.Point(71, 484);
+            this.label6.Location = new System.Drawing.Point(43, 616);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 32);
+            this.label6.Size = new System.Drawing.Size(212, 36);
             this.label6.TabIndex = 12;
             this.label6.Text = "Cantidad inicial ";
             // 
             // txtcantidad
             // 
             this.txtcantidad.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcantidad.Location = new System.Drawing.Point(294, 476);
+            this.txtcantidad.Location = new System.Drawing.Point(304, 608);
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(124, 40);
             this.txtcantidad.TabIndex = 13;
@@ -178,7 +187,7 @@
             this.boton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.boton2.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.boton2.Location = new System.Drawing.Point(861, 845);
+            this.boton2.Location = new System.Drawing.Point(861, 875);
             this.boton2.Name = "boton2";
             this.boton2.Size = new System.Drawing.Size(247, 98);
             this.boton2.TabIndex = 15;
@@ -198,7 +207,7 @@
             this.boton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.boton1.Font = new System.Drawing.Font("Paper Daisy DEMO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.boton1.Location = new System.Drawing.Point(137, 674);
+            this.boton1.Location = new System.Drawing.Point(129, 750);
             this.boton1.Name = "boton1";
             this.boton1.Size = new System.Drawing.Size(249, 98);
             this.boton1.TabIndex = 14;
@@ -243,12 +252,42 @@
             this.Fecha.TabIndex = 18;
             this.Fecha.Text = "label9";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Paper Daisy DEMO", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.label7.Location = new System.Drawing.Point(240, 104);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 36);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "REFRESCOS";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Paper Daisy DEMO", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.label8.Location = new System.Drawing.Point(872, 104);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 36);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "CERVEZA";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // VentanaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionDeProductos.Properties.Resources.fondo2;
             this.ClientSize = new System.Drawing.Size(1884, 1041);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Fecha);
             this.Controls.Add(this.evento);
             this.Controls.Add(this.responsable);
@@ -263,13 +302,14 @@
             this.Controls.Add(this.txtVaso);
             this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.txtproducto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "VentanaProducto";
             this.Text = "VentanaProducto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.VentanaProducto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,7 +318,7 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtproducto;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.TextBox txtVaso;
@@ -293,5 +333,8 @@
         private System.Windows.Forms.Label responsable;
         private System.Windows.Forms.Label evento;
         private System.Windows.Forms.Label Fecha;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

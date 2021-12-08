@@ -30,48 +30,51 @@ namespace GestionDeProductos
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.date = new System.Windows.Forms.DateTimePicker();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEvento = new System.Windows.Forms.TextBox();
             this.nombreEnc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fechala = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.botonSiguiente = new GestionDeProductos.Diseño.Boton();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // date
             // 
-            this.date.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(749, 547);
+            this.date.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Location = new System.Drawing.Point(602, 541);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(375, 29);
+            this.date.Size = new System.Drawing.Size(522, 43);
             this.date.TabIndex = 0;
             // 
             // txtNombre
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(749, 266);
+            this.txtNombre.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(602, 266);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(375, 29);
+            this.txtNombre.Size = new System.Drawing.Size(522, 43);
             this.txtNombre.TabIndex = 2;
             // 
             // txtEvento
             // 
-            this.txtEvento.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEvento.Location = new System.Drawing.Point(749, 396);
+            this.txtEvento.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEvento.Location = new System.Drawing.Point(602, 396);
             this.txtEvento.Name = "txtEvento";
-            this.txtEvento.Size = new System.Drawing.Size(375, 29);
+            this.txtEvento.Size = new System.Drawing.Size(522, 43);
             this.txtEvento.TabIndex = 3;
             // 
             // nombreEnc
             // 
             this.nombreEnc.AutoSize = true;
             this.nombreEnc.BackColor = System.Drawing.Color.Transparent;
-            this.nombreEnc.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEnc.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreEnc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.nombreEnc.Location = new System.Drawing.Point(453, 264);
+            this.nombreEnc.Location = new System.Drawing.Point(261, 269);
             this.nombreEnc.Name = "nombreEnc";
-            this.nombreEnc.Size = new System.Drawing.Size(234, 27);
+            this.nombreEnc.Size = new System.Drawing.Size(311, 36);
             this.nombreEnc.TabIndex = 4;
             this.nombreEnc.Text = "Nombre del encargad@";
             this.nombreEnc.Click += new System.EventHandler(this.nombreEnc_Click);
@@ -80,11 +83,11 @@ namespace GestionDeProductos
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label1.Location = new System.Drawing.Point(610, 398);
+            this.label1.Location = new System.Drawing.Point(471, 399);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 27);
+            this.label1.Size = new System.Drawing.Size(101, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = "Evento";
             // 
@@ -92,14 +95,18 @@ namespace GestionDeProductos
             // 
             this.fechala.AutoSize = true;
             this.fechala.BackColor = System.Drawing.Color.Transparent;
-            this.fechala.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechala.Font = new System.Drawing.Font("Abadi MT Std Extra Light", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.fechala.Location = new System.Drawing.Point(618, 549);
+            this.fechala.Location = new System.Drawing.Point(481, 541);
             this.fechala.Name = "fechala";
-            this.fechala.Size = new System.Drawing.Size(69, 27);
+            this.fechala.Size = new System.Drawing.Size(91, 36);
             this.fechala.TabIndex = 6;
             this.fechala.Text = "Fecha";
             this.fechala.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // botonSiguiente
             // 
@@ -112,7 +119,7 @@ namespace GestionDeProductos
             this.botonSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonSiguiente.Font = new System.Drawing.Font("Paper Daisy DEMO", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.botonSiguiente.Location = new System.Drawing.Point(816, 675);
+            this.botonSiguiente.Location = new System.Drawing.Point(816, 806);
             this.botonSiguiente.Name = "botonSiguiente";
             this.botonSiguiente.Size = new System.Drawing.Size(308, 79);
             this.botonSiguiente.TabIndex = 7;
@@ -140,6 +147,7 @@ namespace GestionDeProductos
             this.Name = "VentanaEvento";
             this.Text = "Ventana2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +172,6 @@ namespace GestionDeProductos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label fechala;
         private Diseño.Boton botonSiguiente;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

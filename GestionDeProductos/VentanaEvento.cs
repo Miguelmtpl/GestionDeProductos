@@ -18,16 +18,34 @@ namespace GestionDeProductos
             InitializeComponent();
         }
 
-        
+
 
         private void boton1_Click(object sender, EventArgs e)
         {
-            rellenarEvento();
-            this.Hide();
-            VentanaProducto ventanap = new VentanaProducto(Ev);
-            ventanap.Show();
+            switch (validaciones())
+            {
+                case 0:
+                    {
+                        rellenarEvento();
+                        this.Hide();
+                        VentanaProducto ventanap = new VentanaProducto(Ev);
+                        ventanap.Show();
+                        break;
+                    }
+                case 1:
+                    {
+                        errorProvider1.SetError(txtNombre, "Por favor rellene el campo organizador solo con letras");
+                        break;
+                    }
+                case 2:
+                    {
+                        errorProvider1.SetError(txtEvento, "Por favor relene el campo evento");
+                        break;
+                    }
+
+            }
         }
-        private void rellenarEvento()
+        public void rellenarEvento()
         {
             Ev.Responsable= txtNombre.Text;
             Ev.Nombre= txtEvento.Text;
@@ -35,5 +53,31 @@ namespace GestionDeProductos
         }
 
         
+        int validaciones()
+        {
+            if (!(txtNombre.Text.All(Char.IsLetter))|| txtNombre.Text=="")
+            {
+                
+                return 1;
+            }
+            else
+            {
+                if (txtEvento.Text == "")
+                {
+                    return 2;
+                }
+                else
+                {
+                    return 0;
+                }
+                
+            }
+        }
+      
+       
+
+
+        }
     }
-}
+
+
