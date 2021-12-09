@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GestionDeProductos
 {
-    public partial class GestionProductos : Form
+    public partial class VentanaGestionProductos : Form
     {
         String nombre;
         private List<MochileroRefrescos> listaMochilerosR;
         private List<MochileroCerveza> listaMochilerosC;
         Cerveza c;
         Evento ev;
-        public GestionProductos(String nombre, List<MochileroRefrescos> listaMochilerosR, List<MochileroCerveza> listaMochilerosC, Cerveza c, Evento ev)
+        public VentanaGestionProductos(String nombre, List<MochileroRefrescos> listaMochilerosR, List<MochileroCerveza> listaMochilerosC, Cerveza c, Evento ev)
         {
             InitializeComponent();
             this.listaMochilerosR = listaMochilerosR;
@@ -147,6 +147,7 @@ namespace GestionDeProductos
             responsable.Text = ev.Responsable;
             evento.Text = ev.Nombre;
             fecha.Text = ev.Fecha.ToString();
+            nombreM.Text = nombre;
         }
     }
 }

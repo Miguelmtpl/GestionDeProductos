@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaMochilero));
             this.txtNombreM = new System.Windows.Forms.TextBox();
             this.nombreMochilero = new System.Windows.Forms.Label();
             this.mochila = new System.Windows.Forms.Label();
@@ -226,6 +227,7 @@
             this.Controls.Add(this.mochila);
             this.Controls.Add(this.nombreMochilero);
             this.Controls.Add(this.txtNombreM);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VentanaMochilero";
             this.Text = "AgregarMochileros";

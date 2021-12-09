@@ -1,6 +1,6 @@
 ﻿namespace GestionDeProductos
 {
-    partial class Liquidacion
+    partial class VentanaLiquidacion
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaLiquidacion));
             this.diner = new System.Windows.Forms.Label();
             this.dE = new System.Windows.Forms.Label();
             this.dif = new System.Windows.Forms.Label();
@@ -198,15 +199,15 @@
             // 
             this.nombreMochilero.AutoSize = true;
             this.nombreMochilero.BackColor = System.Drawing.Color.Transparent;
-            this.nombreMochilero.Font = new System.Drawing.Font("Paper Daisy DEMO", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreMochilero.Font = new System.Drawing.Font("Paper Daisy DEMO", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreMochilero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
             this.nombreMochilero.Location = new System.Drawing.Point(530, 169);
             this.nombreMochilero.Name = "nombreMochilero";
-            this.nombreMochilero.Size = new System.Drawing.Size(66, 39);
+            this.nombreMochilero.Size = new System.Drawing.Size(110, 67);
             this.nombreMochilero.TabIndex = 16;
             this.nombreMochilero.Text = "label1";
             // 
-            // Liquidacion
+            // VentanaLiquidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,8 +225,9 @@
             this.Controls.Add(this.dif);
             this.Controls.Add(this.dE);
             this.Controls.Add(this.diner);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Liquidacion";
+            this.Name = "VentanaLiquidacion";
             this.Text = "Liquidacion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Liquidacion_Load);

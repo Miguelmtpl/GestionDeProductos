@@ -89,11 +89,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Evento.cs" />
-    <Compile Include="GestionProductos.cs">
+    <Compile Include="VentanaGestionProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionProductos.Designer.cs">
-      <DependentUpon>GestionProductos.cs</DependentUpon>
+    <Compile Include="VentanaGestionProductos.Designer.cs">
+      <DependentUpon>VentanaGestionProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="MochileroCerveza.cs" />
     <Compile Include="MochileroRefrescos.cs" />
@@ -122,11 +122,11 @@
     <Compile Include="VentanaGestion.Designer.cs">
       <DependentUpon>VentanaGestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Liquidacion.cs">
+    <Compile Include="VentanaLiquidacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Liquidacion.Designer.cs">
-      <DependentUpon>Liquidacion.cs</DependentUpon>
+    <Compile Include="VentanaLiquidacion.Designer.cs">
+      <DependentUpon>VentanaLiquidacion.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaInicio.cs">
       <SubType>Form</SubType>
@@ -145,8 +145,8 @@
     <EmbeddedResource Include="ConsultarPro.resx">
       <DependentUpon>ConsultarPro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionProductos.resx">
-      <DependentUpon>GestionProductos.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaGestionProductos.resx">
+      <DependentUpon>VentanaGestionProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaEvento.resx">
       <DependentUpon>VentanaEvento.cs</DependentUpon>
@@ -160,8 +160,8 @@
     <EmbeddedResource Include="VentanaGestion.resx">
       <DependentUpon>VentanaGestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Liquidacion.resx">
-      <DependentUpon>Liquidacion.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaLiquidacion.resx">
+      <DependentUpon>VentanaLiquidacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaInicio.resx">
       <DependentUpon>VentanaInicio.cs</DependentUpon>

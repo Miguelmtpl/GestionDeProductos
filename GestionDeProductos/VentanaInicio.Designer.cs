@@ -60,7 +60,7 @@ namespace GestionDeProductos
             this.titulo.Size = new System.Drawing.Size(887, 188);
             this.titulo.TabIndex = 2;
             this.titulo.Text = "MANAGEAPPEVENTS";
-            this.titulo.Click += new System.EventHandler(this.label1_Click_1);
+           
             // 
             // botonInicio
             // 

@@ -1,6 +1,6 @@
 ﻿namespace GestionDeProductos
 {
-    partial class GestionProductos
+    partial class VentanaGestionProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaGestionProductos));
             this.comboProductos = new System.Windows.Forms.ComboBox();
             this.btnme = new GestionDeProductos.Diseño.Boton();
             this.btnmas = new GestionDeProductos.Diseño.Boton();
@@ -37,7 +38,7 @@
             this.evento = new System.Windows.Forms.Label();
             this.fecha = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.nombreM = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,25 +152,25 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label1
+            // nombreM
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Paper Daisy DEMO", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
-            this.label1.Location = new System.Drawing.Point(556, 190);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 39);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
+            this.nombreM.AutoSize = true;
+            this.nombreM.BackColor = System.Drawing.Color.Transparent;
+            this.nombreM.Font = new System.Drawing.Font("Paper Daisy DEMO", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(203)))), ((int)(((byte)(215)))));
+            this.nombreM.Location = new System.Drawing.Point(556, 190);
+            this.nombreM.Name = "nombreM";
+            this.nombreM.Size = new System.Drawing.Size(110, 67);
+            this.nombreM.TabIndex = 11;
+            this.nombreM.Text = "label1";
             // 
-            // GestionProductos
+            // VentanaGestionProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionDeProductos.Properties.Resources.fondo2;
             this.ClientSize = new System.Drawing.Size(1884, 1041);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nombreM);
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.evento);
             this.Controls.Add(this.responsable);
@@ -177,8 +178,9 @@
             this.Controls.Add(this.btnmas);
             this.Controls.Add(this.btnme);
             this.Controls.Add(this.comboProductos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "GestionProductos";
+            this.Name = "VentanaGestionProductos";
             this.Text = "GestionProductos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GestionProductos_Load);
@@ -197,6 +199,6 @@
         private System.Windows.Forms.Label evento;
         private System.Windows.Forms.Label fecha;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nombreM;
     }
 }

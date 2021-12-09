@@ -31,6 +31,7 @@ namespace GestionDeProductos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaEvento));
             this.date = new System.Windows.Forms.DateTimePicker();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEvento = new System.Windows.Forms.TextBox();
@@ -143,6 +144,7 @@ namespace GestionDeProductos
             this.Controls.Add(this.txtEvento);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.date);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VentanaEvento";
             this.Text = "Evento";

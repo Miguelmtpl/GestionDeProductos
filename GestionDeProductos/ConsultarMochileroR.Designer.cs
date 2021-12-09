@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarMochileroR));
             this.tabla = new System.Windows.Forms.DataGridView();
             this.boton1 = new GestionDeProductos.Diseño.Boton();
             this.boton2 = new GestionDeProductos.Diseño.Boton();
@@ -91,6 +92,7 @@
             this.Controls.Add(this.boton2);
             this.Controls.Add(this.boton1);
             this.Controls.Add(this.tabla);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConsultarMochileroR";

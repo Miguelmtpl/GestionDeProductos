@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaGestion));
             this.mochilero = new System.Windows.Forms.Label();
             this.comboNombres = new System.Windows.Forms.ComboBox();
             this.btnfinalizar = new GestionDeProductos.Diseño.Boton();
@@ -177,6 +178,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.comboNombres);
             this.Controls.Add(this.mochilero);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VentanaGestion";
             this.Text = "Gestion";

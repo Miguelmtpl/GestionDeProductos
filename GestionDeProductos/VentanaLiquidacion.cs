@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GestionDeProductos
 {
-    public partial class Liquidacion : Form
+    public partial class VentanaLiquidacion : Form
     {
         Evento ev;
         Cerveza c;
@@ -18,7 +18,7 @@ namespace GestionDeProductos
         List<MochileroCerveza> listaMochilerosC;
         String nombre;
 
-        public Liquidacion(String nombre,List<MochileroRefrescos> mochilerosR, List<MochileroCerveza> mochilerosC, Cerveza c,Evento ev)
+        public VentanaLiquidacion(String nombre,List<MochileroRefrescos> mochilerosR, List<MochileroCerveza> mochilerosC, Cerveza c,Evento ev)
         {
             this.nombre = nombre;
             this.listaMochilerosC = mochilerosC;
@@ -123,6 +123,27 @@ namespace GestionDeProductos
                 double a = Convert.ToDouble(txtDineroEnt.Text);
                 double b = Convert.ToDouble(dineroE.Text);
                 diferencia.Text = (a - b).ToString();
+                foreach (var v in listaMochilerosR)
+            {
+                if (v.Nombre.Equals(nombre))
+                {
+
+                        v.DineroEntregado = Convert.ToDouble(txtDineroEnt.Text); 
+                  
+                    
+                    
+                }
+
+            }
+            foreach (var v in listaMochilerosC)
+            {
+                if (v.Nombre.Equals(nombre))
+                {
+                        v.DineroEntregado = Convert.ToDouble(txtDineroEnt.Text);
+                  
+                }
+
+            }
             }
         }
 

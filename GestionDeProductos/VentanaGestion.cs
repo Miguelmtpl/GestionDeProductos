@@ -54,7 +54,43 @@ namespace GestionDeProductos
             guardar.FileName =  "_evento.pdf"+".pdf";
            
             String html=Properties.Resources.Plantilla.ToString();
-            //html=html.Replace(@)
+            html = html.Replace("@RESPONSABLE",ev.Responsable);
+            html = html.Replace("@EVENTO", ev.Nombre);
+            html = html.Replace("@FECHA", ev.Fecha.ToString("dd/MM/yyyy"));
+            string filas = string.Empty;
+            String pro=String.Empty;
+            
+            foreach (MochileroCerveza c in listaMochilerosC)
+            {
+                
+                filas += "<tr>";
+                filas += "<td>" + c.Nombre + "</td>";
+                filas += "<td>" + "Tanquetas "+c.Tanquetas + "</td>";
+                filas += "<td>" + c.Dinero.ToString()+"€" + "</td>";
+                filas += "<td>" + c.DineroEntregado.ToString()+"€" + "</td>";
+                filas += "<td>" + (c.DineroEntregado- c.Dinero) + "€" + "</td>";
+                filas += "</tr>";
+               
+            }
+           
+            foreach (MochileroRefrescos r in listaMochilerosR)
+            {
+                
+                filas += "<tr>";
+                filas += "<td>" + r.Nombre + "</td>";
+                filas += "<td>";
+                foreach (Producto p in r.ListaProductos ){
+                    filas += "\n"+ p.Nombre +"  "+ p.Cantidad.ToString();
+                }
+                filas += "</td>";
+                filas += "<td>" + r.Dinero + "€" + "</td>";
+                filas += "<td>" + r.DineroEntregado + "€" + "</td>";
+                filas += "<td>" + (r.DineroEntregado - r.Dinero) + "€" + "</td>";
+                filas += "</tr>";
+
+            }
+            html = html.Replace("@FILAS", filas);
+            
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -84,7 +120,7 @@ namespace GestionDeProductos
             else
             {
                 this.Hide();
-                GestionProductos gestionDeProductos = new GestionProductos(comboNombres.Text, listaMochilerosR, listaMochilerosC, c,ev);
+                VentanaGestionProductos gestionDeProductos = new VentanaGestionProductos(comboNombres.Text, listaMochilerosR, listaMochilerosC, c,ev);
                 gestionDeProductos.Show();
             }
         }
@@ -98,7 +134,7 @@ namespace GestionDeProductos
             else
             {
                 this.Hide();
-                Liquidacion vent8 = new Liquidacion(comboNombres.Text, listaMochilerosR, listaMochilerosC, c,ev);
+                VentanaLiquidacion vent8 = new VentanaLiquidacion(comboNombres.Text, listaMochilerosR, listaMochilerosC, c,ev);
                 vent8.Show();
             }
         }

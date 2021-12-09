@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaProducto));
             this.producto = new System.Windows.Forms.Label();
             this.precio = new System.Windows.Forms.Label();
             this.txtproducto = new System.Windows.Forms.TextBox();
@@ -327,6 +328,7 @@
             this.Controls.Add(this.txtproducto);
             this.Controls.Add(this.precio);
             this.Controls.Add(this.producto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaProducto";
             this.Text = "Productos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
